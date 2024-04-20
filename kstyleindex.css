@@ -1,0 +1,790 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+*{ 
+    /* font-family: 'Open Sans', sans-serif; */
+    margin:0;
+    padding:0;
+}
+
+/* Navigation */
+
+nav{
+    display:flex;
+    justify-content: center;
+    padding:10px;
+    background-color: antiquewhite;
+    gap: 100px;;
+  }
+  ul{
+      display: flex;
+      list-style:none;
+      gap:40px;
+      /* justify-content: center; */
+      align-items: center;
+      order:2;
+      font-family: 'Open Sans', sans-serif;
+  }
+  .nav-link{
+      padding:20px;
+      text-decoration:none;
+      color:#ee701e;
+      font-family: poppins-medium;
+  }
+  .nav-link:hover{
+      padding:20px;
+      border-radius:100px;
+      text-decoration:none;
+      background-color:#ee701e;
+      color:white;
+      font-family: poppins-medium;
+  }
+  
+  .nav-btn{
+      background-color:#ee701e;
+      border:none;
+      border-radius:100px;
+  padding:10px 40px;
+  color:white;
+  font-family: poppins-medium;
+  }
+  
+  #check_box{
+      display:none;
+  }
+  .checkbtn{
+      display:none;
+     align-self:center;
+     font-size: 25px;
+     color:white;
+      order:3;
+  }
+
+  /* Banner */
+ .main-banner{
+    background:url('./Images/Home/main-banner.jpg');
+    width:100%;
+    height:70vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+ }
+ .main-ban-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    Color:white;
+    font-size:40px;
+    gap:50px;
+ }
+
+ 
+.blank-space
+{
+    height:80px;
+    width:100%;
+    background-color: rgb(1, 1, 1);
+    display: flex;
+}
+
+
+/* cateogory */
+.card-cat{
+    width:28%;
+    height:auto;
+    background-color:#ee701e;    
+    /* border-radius: 20px; */
+}
+.home-service-image1{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/service-SAP.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+.home-service-image2{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/service-Digital.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+.home-service-image3{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/service-consulting.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+.card-head{
+    padding: 20px 0px;
+    text-align:center;
+    font-family: poppins-medium;
+    font-size:20px;
+    color:white;
+}
+.card-parent-3{
+    width:80%;
+display: flex;
+justify-content: center;
+gap:160px;
+}
+.home-page-service{
+    height:60vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+
+/* Why Section */
+.why-us{
+    Width:100%;
+    /* height:800px; */
+    height:30vh;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    padding:30px;
+}
+
+.why-container
+{
+    Width:80%;
+    height:1000px;
+    background-color:antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    padding:30px;
+    border-radius:20px;
+
+}
+
+.why-content
+{
+    width:60%;
+    display: flex;
+    justify-content: center;
+}
+
+.features{
+    height:50vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.card-parent-4{
+    width:80%;
+display: flex;
+justify-content: center;
+gap:60px;
+}
+
+.feature-image1{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/feature-idea.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+.feature-image2{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/feature-customer.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+.feature-image3{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/feature-success.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+footer{
+
+    
+    text-align: center;
+    width:100%;
+    height:20px;
+    padding:20px;
+    background-color:#ee701e;
+    color:white;
+}
+
+
+/* Home page ends */
+
+/* Media query for tablet original large */
+
+@media(max-width: 768px){
+
+    .container{
+        position: relative;
+    }
+nav{
+    display:flex;
+    justify-content: space-around;
+    padding:30px;
+    background-color: antiquewhite;
+    gap: 100px;
+  }
+  ul{
+      display: flex;
+      flex-direction: column;
+      list-style:none;
+      gap:40px;
+
+      align-items: center;
+      order:2;
+      font-family: 'Open Sans', sans-serif;
+      width:100%;
+      position: absolute;
+      background-color: rgb(255, 255, 255);
+      padding:30px 0px;
+      top:-100%;
+      transition: .7s;
+      -webkit-transition: .7s;
+      -moz-transition: .7s;
+      -ms-transition: .7s;
+      -o-transition: .7s
+  }
+  .nav-link{
+      padding:20px;
+      text-decoration:none;
+      color:#ee701e;
+      font-family: poppins-medium;
+  }
+  .nav-link:hover{
+      padding:20px;
+      border-radius:100px;
+      text-decoration:none;
+      background-color:#ee701e;
+      color:white;
+      font-family: poppins-medium;
+  }
+  
+  .nav-btn{
+      background-color:#ee701e;
+      border:none;
+      border-radius:100px;
+  padding:10px 40px;
+  color:white;
+  display: block;
+  font-family: poppins-medium;
+  }
+  
+  #check_box{
+      display:none;
+  }
+  #check_box:checked ~ ul{
+    top:130px;
+  }
+  .checkbtn{
+      display:block;
+     align-self:center;
+     font-size: 25px;
+     color:rgb(2, 2, 2);
+      order:3;
+  }
+
+  /* Banner */
+ .main-banner{
+    background:url('./Images/Home/main-banner.jpg');
+    width:100%;
+    height:50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+ }
+ .main-ban-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    Color:white;
+    font-size:20px;
+    gap:30px;
+ }
+
+ 
+.blank-space
+{
+    height:20px;
+    width:100%;
+    background-color: rgb(1, 1, 1);
+    display: flex;
+}
+
+
+/* cateogory */
+.card-cat{
+    width:90%;
+    height:auto;
+    background-color:#ee701e;    
+    /* border-radius: 20px; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home-service-image1{
+    display:flex;
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/service-SAP.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+.home-service-image2{
+    display:flex;
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/service-Digital.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+.home-service-image3{
+    display:flex;
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/service-consulting.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+.card-head{
+    padding: 20px 0px;
+    text-align:center;
+    font-family: poppins-medium;
+    font-size:20px;
+    color:white;
+}
+.card-parent-3{
+    width:80%;
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+align-items: center;
+gap:60px;
+}
+.home-page-service{
+    height:150vh;
+    display: flex;
+    flex-direction:column;
+    align-self: center;
+    /* justify-content: center; */
+    gap:30px;
+}
+
+/* Why Section */
+.why-us{
+    Width:100%;
+    height:30vh;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap:30px; */
+    padding:20px;
+}
+.why-head{
+    font-size:12px;
+}
+.why-container
+{
+    Width:80%;
+    height:300px;
+    background-color:antiquewhite;
+    /* background-color:rgb(71, 19, 244); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    padding:20px;
+    border-radius:20px;
+
+}
+
+.why-content
+{
+    width:80%;
+    /* height:200px; */
+    display: flex;
+    justify-content: center;
+    /* font-size: 10px; */
+}
+
+.features{
+    height:140vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+.card-parent-4{
+    width:80%;
+    /* height:220vh; */
+    /* background-color: blue; */
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+align-items: center;
+
+gap:50px;
+}
+
+.feature-image1{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/feature-idea.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+.feature-image2{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/feature-customer.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+.feature-image3{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/feature-success.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+footer{
+
+    
+    text-align: center;
+    width:100%;
+    height:20px;
+    padding:20px;
+    background-color:#ee701e;
+    color:white;
+    font-size: 14px;
+}
+
+}
+
+/* Media query for mobile */
+
+@media(max-width: 425){
+
+    .container{
+        position: relative;
+    }
+nav{
+    display:flex;
+    justify-content: space-around;
+    padding:30px;
+    background-color: antiquewhite;
+    gap: 100px;
+  }
+  ul{
+      display: flex;
+      flex-direction: column;
+      list-style:none;
+      gap:40px;
+      /*justify-content: center;
+      */align-items: center;
+      order:2;
+      font-family: 'Open Sans', sans-serif;
+      width:100%;
+      position: absolute;
+      background-color: rgb(255, 255, 255);
+      padding:30px 0px;
+      top:-100%;
+      transition: .7s;
+}
+  .nav-link{
+      padding:20px;
+      text-decoration:none;
+      color:#ee701e;
+      font-family: poppins-medium;
+  }
+  .nav-link:hover{
+      padding:20px;
+      border-radius:100px;
+      text-decoration:none;
+      background-color:#ee701e;
+      color:white;
+      font-family: poppins-medium;
+  }
+  
+  .nav-btn{
+      background-color:#ee701e;
+      border:none;
+      border-radius:100px;
+  padding:10px 40px;
+  color:white;
+  display: none;
+  font-family: poppins-medium;
+  }
+  
+  #check_box{
+      display:none;
+  }
+  #check_box:checked ~ ul{
+    top:100px;
+  }
+  .checkbtn{
+      display:block;
+     align-self:center;
+     font-size: 25px;
+     color:rgb(2, 2, 2);
+      order:3;
+  }
+
+  /* Banner */
+ .main-banner{
+    background:url('./Images/Home/main-banner.jpg');
+    width:100%;
+    height:90vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+ }
+ .main-ban-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    Color:white;
+    /* font-size:50px; */
+    gap:50px;
+ }
+
+ 
+.blank-space
+{
+    height:80px;
+    width:100%;
+    background-color: rgb(1, 1, 1);
+    display: flex;
+}
+
+
+/* cateogory */
+.card-cat{
+    width:90%;
+    height:auto;
+    background-color:#ee701e;    
+    /* border-radius: 20px; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: blue; */
+}
+.home-service-image1{
+    display:flex;
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/service-SAP.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+.home-service-image2{
+    display:flex;
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/service-Digital.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+.home-service-image3{
+    display:flex;
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/service-consulting.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+.card-head{
+    padding: 20px 0px;
+    text-align:center;
+    font-family: poppins-medium;
+    font-size:20px;
+    color:white;
+}
+.card-parent-3{
+    width:80%;
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+/* align-items: center; */
+gap:30px;
+}
+.home-page-service{
+    height:160vh;
+    display: flex;
+    flex-direction:column;
+    align-self: center;
+    /* justify-content: center; */
+    /* background-color: blue; */
+    gap:20px;
+}
+
+/* Why Section */
+.why-us{
+    Width:100%;
+    height:30vh;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    padding:30px;
+}
+.why-head{
+    font-size:12px;
+}
+.why-container
+{
+    Width:80%;
+    height:350px;
+    background-color:antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    padding:30px;
+    border-radius:20px;
+
+}
+
+.why-content
+{
+    width:80%;
+    /* height:200px; */
+    display: flex;
+    justify-content: center;
+    /* font-size: 10px; */
+}
+
+.features{
+    height:120vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.card-parent-4{
+    width:80%;
+    /* height:220vh; */
+    background-color: blue;
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+align-items: center;
+
+gap:20px;
+}
+
+.feature-image1{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/feature-idea.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+.feature-image2{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/feature-customer.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+.feature-image3{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/feature-success.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+footer{
+
+    
+    text-align: center;
+    width:100%;
+    height:20px;
+    padding:20px;
+    background-color:#ee701e;
+    color:white;
+}
+
+}
+
+

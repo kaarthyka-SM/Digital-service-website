@@ -1,0 +1,540 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+*{ 
+    /* font-family: 'Open Sans', sans-serif; */
+    margin:0;
+    padding:0;
+}
+
+/* Navigation */
+
+nav{
+    display:flex;
+    justify-content: center;
+    padding:10px;
+    background-color: antiquewhite;
+    gap: 100px;;
+  }
+  ul{
+      display: flex;
+      list-style:none;
+      gap:40px;
+      /* justify-content: center; */
+      align-items: center;
+      order:2;
+      font-family: 'Open Sans', sans-serif;
+  }
+  .nav-link{
+      padding:20px;
+      text-decoration:none;
+      color:#ee701e;
+      font-family: poppins-medium;
+  }
+  .nav-link:hover{
+      padding:20px;
+      border-radius:100px;
+      text-decoration:none;
+      background-color:#ee701e;
+      color:white;
+      font-family: poppins-medium;
+  }
+  
+  .nav-btn{
+      background-color:#ee701e;
+      border:none;
+      border-radius:100px;
+  padding:10px 40px;
+  color:white;
+  font-family: poppins-medium;
+  }
+  
+  #check_box{
+      display:none;
+  }
+  .checkbtn{
+      display:none;
+     align-self:center;
+     font-size: 25px;
+     color:white;
+      order:3;
+  }
+
+  /* About us page begins */
+
+.about-main-banner{
+    background:url('./Images/about-us/about-banner.png');
+    width:100%;
+    height:50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    position:relative;
+}
+.s-main-ban-content
+{
+    color:white;
+    font-size: 140px;
+    top:30%;
+    position:relative;
+}
+
+.a-container
+{
+    width:100%;
+    height:90vh;
+    background-color: rgb(191, 215, 85);
+    display:flex;
+    /* padding:50px; */
+    justify-content: center;
+    /* align-items: center; */
+   
+}
+
+.a-frame
+{
+    width:80%;
+    height:80vh;
+    background-color: aquamarine;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    /* gap:10px; */
+}
+.about-content
+{
+    /* height:15%; */
+width:100%;
+font-size: 20px;
+background-color: rgb(171, 154, 1);
+}
+
+.about-image
+{ 
+    background:url('./Images/about-us/about-us-logo.png');
+    width:100%;
+    height:60%;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goal-container
+{
+    /* background-color: blue; */
+    width:100%;
+    height:50vh;
+    display:flex;
+    justify-content: center;
+    gap:60px;
+}
+.goal-frame
+{
+    Width:20%;
+    height:75%;
+    background-color:#ec8947;
+    display:flex;
+    flex-direction: column;
+    padding:30px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+/* Service page ends */
+
+footer{
+
+    
+    text-align: center;
+    width:100%;
+    height:20px;
+    padding:20px;
+    background-color:#ee701e;
+    color:white;
+}
+
+/* Media query for tablet */
+
+@media(max-width:768px){
+
+/* Tablet navigation */
+.container{
+    position: relative;
+}
+nav{
+display:flex;
+justify-content: space-around;
+padding:30px;
+background-color: antiquewhite;
+gap: 100px;
+}
+ul{
+  display: flex;
+  flex-direction: column;
+  list-style:none;
+  gap:40px;
+
+  align-items: center;
+  order:2;
+  font-family: 'Open Sans', sans-serif;
+  width:100%;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  padding:30px 0px;
+  top:-100%;
+  transition: .7s;
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+  -ms-transition: .7s;
+  -o-transition: .7s
+}
+.nav-link{
+  padding:20px;
+  text-decoration:none;
+  color:#ee701e;
+  font-family: poppins-medium;
+}
+.nav-link:hover{
+  padding:20px;
+  border-radius:100px;
+  text-decoration:none;
+  background-color:#ee701e;
+  color:white;
+  font-family: poppins-medium;
+}
+
+.nav-btn{
+  background-color:#ee701e;
+  border:none;
+  border-radius:100px;
+padding:10px 40px;
+color:white;
+display: block;
+font-family: poppins-medium;
+}
+
+#check_box{
+  display:none;
+}
+#check_box:checked ~ ul{
+top:130px;
+}
+.checkbtn{
+  display:block;
+ align-self:center;
+ font-size: 25px;
+ color:rgb(2, 2, 2);
+  order:3;
+}
+  /* About us page begins */
+
+  .about-main-banner{
+    background:url('./Images/about-us/about-banner.png');
+    width:100%;
+    height:30vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    position:relative;
+}
+.s-main-ban-content
+{
+    color:white;
+    font-size: 80px;
+    top:30%;
+    position:relative;
+}
+
+.a-container
+{
+    width:100%;
+    height:100vh;
+    /* background-color: rgb(191, 215, 85); */
+    display:flex;
+    /* padding:50px; */
+    justify-content: center;
+   
+}
+
+.a-frame
+{
+    width:80%;
+    height:90vh;
+    /* background-color: aquamarine; */
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    /* justify-content: center; */
+    /* gap:10px; */
+}
+.about-content
+{
+    /* height:15%; */
+width:100%;
+font-size: 16px;
+/* background-color: rgb(171, 154, 1); */
+}
+
+.about-image
+{ 
+    background:url('./Images/about-us/about-us-logo.png');
+    width:100%;
+    height:25%;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goal-container
+{
+    background-color: blue;
+    width:100%;
+    height:50vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+}
+.goal-frame
+{
+    Width:70%;
+    /* height:75%; */
+    background-color:#ec8947;
+    display:flex;
+    flex-direction: column;
+    padding:30px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+
+
+footer{
+
+    
+    text-align: center;
+    width:100%;
+    height:20px;
+    padding:20px;
+    background-color:#ee701e;
+    color:white;
+    font-size:14px;
+}
+
+.blank-space
+{
+    height:200px;
+    width:100%;
+    /* background-color: rgb(1, 1, 1); */
+    display: flex;
+}
+
+}
+
+/* media query for mobile */
+
+
+@media(max-width:425){
+
+    /* Tablet navigation */
+    .container{
+        position: relative;
+    }
+    nav{
+    display:flex;
+    justify-content: space-around;
+    padding:30px;
+    background-color: antiquewhite;
+    gap: 100px;
+    }
+    ul{
+      display: flex;
+      flex-direction: column;
+      list-style:none;
+      gap:40px;
+    
+      align-items: center;
+      order:2;
+      font-family: 'Open Sans', sans-serif;
+      width:100%;
+      position: absolute;
+      background-color: rgb(255, 255, 255);
+      padding:30px 0px;
+      top:-100%;
+      transition: .7s;
+      -webkit-transition: .7s;
+      -moz-transition: .7s;
+      -ms-transition: .7s;
+      -o-transition: .7s
+    }
+    .nav-link{
+      padding:20px;
+      text-decoration:none;
+      color:#ee701e;
+      font-family: poppins-medium;
+    }
+    .nav-link:hover{
+      padding:20px;
+      border-radius:100px;
+      text-decoration:none;
+      background-color:#ee701e;
+      color:white;
+      font-family: poppins-medium;
+    }
+    
+    .nav-btn{
+      background-color:#ee701e;
+      border:none;
+      border-radius:100px;
+    padding:10px 40px;
+    color:white;
+    display: block;
+    font-family: poppins-medium;
+    }
+    
+    #check_box{
+      display:none;
+    }
+    #check_box:checked ~ ul{
+    top:130px;
+    }
+    .checkbtn{
+      display:block;
+     align-self:center;
+     font-size: 25px;
+     color:rgb(2, 2, 2);
+      order:3;
+    }
+      /* About us page begins */
+    
+      .about-main-banner{
+        background:url('./Images/about-us/about-banner.png');
+        width:100%;
+        height:50vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        position:relative;
+    }
+    .s-main-ban-content
+    {
+        color:white;
+    }
+    
+    .a-container
+    {
+        width:100%;
+        height:1350px;
+        /* background-color: rgb(191, 215, 85); */
+        display:flex;
+        /* padding:50px; */
+        justify-content: center;
+       
+    }
+    
+    .a-frame
+    {
+        width:80%;
+        height:100%;
+        /* background-color: aquamarine; */
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        /* gap:10px; */
+    }
+    .about-content
+    {
+        height:15%;
+    width:100%;
+    font-size: 20px;
+    /* background-color: rgb(171, 154, 1); */
+    }
+    
+    .about-image
+    { 
+        background:url('./Images/about-us/about-us-logo.png');
+        width:100%;
+        height:15%;
+    
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .goal-container
+    {
+        background-color: blue;
+        width:100%;
+        height:50vh;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:40px;
+    }
+    .goal-frame
+    {
+        Width:70%;
+        /* height:75%; */
+        background-color:#ec8947;
+        display:flex;
+        flex-direction: column;
+        padding:30px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+    
+    
+    
+    footer{
+    
+        
+        text-align: center;
+        width:100%;
+        height:20px;
+        padding:20px;
+        background-color:#ee701e;
+        color:white;
+    }
+    
+    .blank-space
+    {
+        height:200px;
+        width:100%;
+        /* background-color: rgb(1, 1, 1); */
+        display: flex;
+    }
+    
+    }
+

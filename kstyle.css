@@ -1,0 +1,835 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+*{ 
+    /* font-family: 'Open Sans', sans-serif; */
+    margin:0;
+    padding:0;
+}
+
+/* Navigation */
+
+nav{
+    display:flex;
+    justify-content: center;
+    padding:10px;
+    background-color: antiquewhite;
+    gap: 100px;;
+  }
+  ul{
+      display: flex;
+      list-style:none;
+      gap:40px;
+      /* justify-content: center; */
+      align-items: center;
+      order:2;
+      font-family: 'Open Sans', sans-serif;
+  }
+  .nav-link{
+      padding:20px;
+      text-decoration:none;
+      color:#ee701e;
+      font-family: poppins-medium;
+  }
+  .nav-link:hover{
+      padding:20px;
+      border-radius:100px;
+      text-decoration:none;
+      background-color:#ee701e;
+      color:white;
+      font-family: poppins-medium;
+  }
+  
+  .nav-btn{
+      background-color:#ee701e;
+      border:none;
+      border-radius:100px;
+  padding:10px 40px;
+  color:white;
+  font-family: poppins-medium;
+  }
+  
+  #check_box{
+      display:none;
+  }
+  .checkbtn{
+      display:none;
+     align-self:center;
+     font-size: 25px;
+     color:white;
+      order:3;
+  }
+
+  /* Banner */
+ .main-banner{
+    background:url('./Images/Home/main-banner.jpg');
+    width:100%;
+    height:70vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+ }
+ .main-ban-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    Color:white;
+    /* Size:250px; */
+    gap:50px;
+ }
+
+ 
+.blank-space
+{
+    height:80px;
+    width:100%;
+    background-color: rgb(1, 1, 1);
+    display: flex;
+}
+
+
+/* cateogory */
+.card-cat{
+    width:28%;
+    height:auto;
+    background-color:#ee701e;    
+    /* border-radius: 20px; */
+}
+.home-service-image1{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/service-SAP.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+.home-service-image2{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/service-Digital.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+.home-service-image3{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/service-consulting.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+.card-head{
+    padding: 20px 0px;
+    text-align:center;
+    font-family: poppins-medium;
+    font-size:20px;
+    color:white;
+}
+.card-parent-3{
+    width:80%;
+display: flex;
+justify-content: center;
+gap:160px;
+}
+.home-page-service{
+    height:60vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+
+/* Why Section */
+.why-us{
+    Width:100%;
+    height:200px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    padding:30px;
+}
+
+.why-container
+{
+    Width:80%;
+    height:200px;
+    background-color:antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    padding:30px;
+    border-radius:20px;
+
+}
+
+.why-content
+{
+    width:60%;
+    display: flex;
+    justify-content: center;
+}
+
+.features{
+    height:50vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.card-parent-4{
+    width:80%;
+display: flex;
+justify-content: center;
+gap:60px;
+}
+
+.feature-image1{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/feature-idea.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+.feature-image2{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/feature-customer.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+.feature-image3{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/feature-success.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+footer{
+
+    
+    text-align: center;
+    width:100%;
+    height:20px;
+    padding:20px;
+    background-color:#ee701e;
+    color:white;
+}
+
+
+/* Home page ends */
+
+
+/* Service page begins */
+
+.s-main-banner{
+    background:url('./Images/Service/s-ban.png');
+    width:100%;
+    height:50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    position:relative;
+ }
+ .s-main-ban-content{
+    Color:white;
+    /* Size:1250px; */
+   top:30%;
+    position:relative;
+   
+ }
+
+ /* What we OFFER */
+.s-why-us{
+    Width:100%;
+    height:30vh;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    padding:30px;
+}
+
+.s-why-container
+{
+    Width:80%;
+    height:200px;
+    /* background-color:rgb(105, 70, 24); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    padding:30px;
+    border-radius:20px;
+
+}
+
+.s-why-content
+{
+    width:60%;
+    display: flex;
+    justify-content: center;
+}
+
+.s-container{
+    width:100%;
+    height:150vh;
+    /* background-color: rgb(191, 215, 85); */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    padding:50px 0px 100px 0px;
+gap:100px;
+    /* color:white; */
+}
+.s-frame
+{
+    width:80%;
+    height:80%;
+    /* background-color: aquamarine; */
+    display:flex;
+    justify-content: center;
+    gap:30px;
+
+}
+.service-content
+{
+    height:100%;
+width:50%;
+font-size: 20px;
+/* background-color: rgb(171, 154, 1); */
+display:flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.service-image1
+{ 
+    background:url('./Images/Service/s-service-sap.jpg');
+    width:50%;
+    height:100%;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.service-image2
+{ 
+    background:url('./Images/Service/s-service-digit.jpg');
+    width:50%;
+    height:100%;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.service-image3
+{ 
+    background:url('./Images/Service/s-service-consult.jpg');
+    width:50%;
+    height:100%;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+/* Service page ends */
+
+/* About us page begins */
+
+.about-main-banner{
+    background:url('./Images/about-us/about-banner.png');
+    width:100%;
+    height:50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    position:relative;
+}
+
+.a-container
+{
+    width:100%;
+    height:1500px;
+    /* background-color: rgb(191, 215, 85); */
+    display:flex;
+    /* padding:50px; */
+    justify-content: center;
+   
+}
+
+.a-frame
+{
+    width:60%;
+    height:100%;
+    /* background-color: aquamarine; */
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    /* gap:10px; */
+}
+.about-content
+{
+    height:15%;
+width:100%;
+font-size: 20px;
+/* background-color: rgb(171, 154, 1); */
+}
+
+.about-image
+{ 
+    background:url('./Images/about-us/about-us-logo.png');
+    width:100%;
+    height:50%;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goal-container
+{
+    /* background-color: blue; */
+    width:100%;
+    height:50vh;
+    display:flex;
+    justify-content: center;
+    gap:60px;
+}
+.goal-frame
+{
+    Width:20%;
+    height:55%;
+    background-color:#ec8947;
+    display:flex;
+    flex-direction: column;
+    padding:30px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+/* Service page ends */
+
+/* Contact Page starts */
+
+.contact-main-banner{
+    background:url('./Images/Contact/contact-banner.png');
+    width:100%;
+    height:50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    position:relative;
+}
+
+.con-det-container{
+/* background-color: blue; */
+    width:100%;
+    height:60%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-det-frame
+{
+    width:80%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: center;
+    gap:60px;
+    padding:100px;
+}
+.contact-head{
+    text-align:center;
+}
+.contact-det{
+    width:80%;
+    height:100%;
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start;
+    gap:100px; 
+}
+.cont-info
+{
+    text-align:center;
+}
+
+/* Contact Page ends */
+
+@media(max-width:425px)
+{
+    .container{
+        position: relative;
+    }
+    nav{
+        display:flex;
+        justify-content: space-around;
+        padding:30px;
+        /* z-index:3; */
+      } 
+      
+      ul{
+        display: flex;
+        flex-direction: column;
+        /* z-index:-1 !important; */
+        list-style:none;
+        gap:40px;
+       align-items: center;
+        order:2;
+        width:100%;
+        position: absolute;
+        /* background-color: rgb(255, 255, 255); */
+        padding:30px 0px;
+        top:-100%;
+        transition: .7s;
+        -webkit-transition: .7s;
+        -moz-transition: .7s;
+        -ms-transition: .7s;
+        -o-transition: .7s;
+}
+    .nav-link{
+        padding:20px;
+        text-decoration:none;
+        /* color:rgb(0, 0, 0); */
+        font-family: poppins-medium;
+    }
+    .nav-link:hover{
+        padding:20px;
+        border-radius:100px;
+        text-decoration:none;
+        /* background-color:rgb(37, 89, 193);
+        color:white; */
+        font-family: poppins-medium;
+    }
+    
+    .nav-btn{
+        /* background-color:rgb(233, 101, 101); */
+        border:none;
+        border-radius:100px;
+    padding:10px 40px;
+    color:white;
+    display: none;
+    font-family: poppins-medium;
+    }
+    .nav-btn1{
+        /* background-color:rgb(233, 101, 101); */
+        border:none;
+        border-radius:100px;
+    padding:10px 40px;
+    color:white;
+    display: block;
+    font-family: poppins-medium;
+    }
+    
+    #check_box{
+        display:none;
+    }
+    #check_box:checked ~ ul{
+      top:100px;
+    } 
+
+    .checkbtn{
+        display:block;
+       align-self:center;
+       font-size: 25px;
+       color:rgb(10, 10, 10);
+        /* order:3; */
+    }
+}
+
+
+
+/* Media query for mobile */
+
+/* Navigation */
+
+nav{
+    display:flex;
+    justify-content: center;
+    padding:10px;
+    background-color: antiquewhite;
+    gap: 100px;;
+  }
+  ul{
+      display: flex;
+      list-style:none;
+      gap:40px;
+      /* justify-content: center; */
+      align-items: center;
+      order:2;
+      font-family: 'Open Sans', sans-serif;
+  }
+  .nav-link{
+      padding:20px;
+      text-decoration:none;
+      color:#ee701e;
+      font-family: poppins-medium;
+  }
+  .nav-link:hover{
+      padding:20px;
+      border-radius:100px;
+      text-decoration:none;
+      background-color:#ee701e;
+      color:white;
+      font-family: poppins-medium;
+  }
+  
+  .nav-btn{
+      background-color:#ee701e;
+      border:none;
+      border-radius:100px;
+  padding:10px 40px;
+  color:white;
+  font-family: poppins-medium;
+  }
+  
+  #check_box{
+      display:none;
+  }
+  .checkbtn{
+      display:none;
+     align-self:center;
+     font-size: 25px;
+     color:white;
+      order:3;
+  }
+
+  /* Banner */
+ .main-banner{
+    background:url('./Images/Home/main-banner.jpg');
+    width:100%;
+    height:70vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+ }
+ .main-ban-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    Color:white;
+    /* Size:250px; */
+    gap:50px;
+ }
+
+ 
+.blank-space
+{
+    height:80px;
+    width:100%;
+    background-color: rgb(1, 1, 1);
+    display: flex;
+}
+
+
+/* cateogory */
+.card-cat{
+    width:28%;
+    height:auto;
+    background-color:#ee701e;    
+    /* border-radius: 20px; */
+}
+.home-service-image1{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/service-SAP.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+.home-service-image2{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/service-Digital.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+.home-service-image3{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/service-consulting.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+.card-head{
+    padding: 20px 0px;
+    text-align:center;
+    font-family: poppins-medium;
+    font-size:20px;
+    color:white;
+}
+.card-parent-3{
+    width:80%;
+display: flex;
+justify-content: center;
+gap:160px;
+}
+.home-page-service{
+    height:60vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+
+/* Why Section */
+.why-us{
+    Width:100%;
+    height:200px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    padding:30px;
+}
+
+.why-container
+{
+    Width:80%;
+    height:200px;
+    background-color:antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    padding:30px;
+    border-radius:20px;
+
+}
+
+.why-content
+{
+    width:60%;
+    display: flex;
+    justify-content: center;
+}
+
+.features{
+    height:50vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.card-parent-4{
+    width:80%;
+display: flex;
+justify-content: center;
+gap:60px;
+}
+
+.feature-image1{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/feature-idea.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+.feature-image2{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/feature-customer.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+.feature-image3{
+    width:100%;
+    height:250px;
+    /* border-radius: 20px; */
+    background:url('./images/home/feature-success.jpg');
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+footer{
+
+    
+    text-align: center;
+    width:100%;
+    height:20px;
+    padding:20px;
+    background-color:#ee701e;
+    color:white;
+}
+
+
+/* Home page ends */
